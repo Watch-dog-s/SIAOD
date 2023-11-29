@@ -137,7 +137,7 @@ void bubbleSort(vector<int>& vec) {
 
     for (int i = 0; i < n - 1; ++i) {
         for (int j = 0; j < n - i - 1; ++j) {
-            // Åñëè òåêóùèé ýëåìåíò áîëüøå ñëåäóþùåãî, ìåíÿåì èõ ìåñòàìè
+            // Ã…Ã±Ã«Ã¨ Ã²Ã¥ÃªÃ³Ã¹Ã¨Ã© Ã½Ã«Ã¥Ã¬Ã¥Ã­Ã² Ã¡Ã®Ã«Ã¼Ã¸Ã¥ Ã±Ã«Ã¥Ã¤Ã³Ã¾Ã¹Ã¥Ã£Ã®, Ã¬Ã¥Ã­Ã¿Ã¥Ã¬ Ã¨Ãµ Ã¬Ã¥Ã±Ã²Ã Ã¬Ã¨
             if (vec[j] > vec[j + 1]) {
                 int temp = vec[j];
                 vec[j] = vec[j + 1];
@@ -150,7 +150,7 @@ void bubbleSort(vector<int>& vec) {
 int main() {
 
     setlocale(LC_ALL, "Russian");
-    cout << "Ââåäèòå êîëè÷åñòâî âåðøèí ";
+    cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ ÃªÃ®Ã«Ã¨Ã·Ã¥Ã±Ã²Ã¢Ã® Ã¢Ã¥Ã°Ã¸Ã¨Ã­ ";
     int n;
     cin >> n;
 
@@ -179,19 +179,19 @@ int main() {
     int x;
     while (choice != 0)
     {
-        cout << "1-Âûâîä âûñîòû äåðåâà" << endl;
-        cout << "2-Âûâîä äëèíû ïóòè äåðåâà" << endl;
-        cout << "3-Âûâîä ñðåäíåãî àðèôìåòè÷åñêîãî âñåõ ÷èñåë â äåðåâå" << endl;
+        cout << "1-Ã‚Ã»Ã¢Ã®Ã¤ Ã¢Ã»Ã±Ã®Ã²Ã» Ã¤Ã¥Ã°Ã¥Ã¢Ã " << endl;
+        cout << "2-Ã‚Ã»Ã¢Ã®Ã¤ Ã¤Ã«Ã¨Ã­Ã» Ã¯Ã³Ã²Ã¨ Ã¤Ã¥Ã°Ã¥Ã¢Ã " << endl;
+        cout << "3-Ã‚Ã»Ã¢Ã®Ã¤ Ã±Ã°Ã¥Ã¤Ã­Ã¥Ã£Ã® Ã Ã°Ã¨Ã´Ã¬Ã¥Ã²Ã¨Ã·Ã¥Ã±ÃªÃ®Ã£Ã® Ã¢Ã±Ã¥Ãµ Ã·Ã¨Ã±Ã¥Ã« Ã¢ Ã¤Ã¥Ã°Ã¥Ã¢Ã¥" << endl;
         cin >> choice;
         if (choice == 1)
 
-            cout << "\nÂûñîòà äåðåâà: " << getHeight(root) - 1 << endl;
+            cout << "\nÃ‚Ã»Ã±Ã®Ã²Ã  Ã¤Ã¥Ã°Ã¥Ã¢Ã : " << getHeight(root) - 1 << endl;
 
         if (choice == 2)
         {
 
 
-            cout << "Äëèíà ïóòè äåðåâà: " << countEdges(root) << endl;
+            cout << "Ã„Ã«Ã¨Ã­Ã  Ã¯Ã³Ã²Ã¨ Ã¤Ã¥Ã°Ã¥Ã¢Ã : " << countEdges(root) << endl;
         }
 
 
@@ -199,7 +199,7 @@ int main() {
         {
             int sum = 0, count = 0;
             float average = calculateAverage(root, sum, count) / count;
-            cout << "Ñðåäíåå àðèôìåòè÷åñêîå: " << average << endl;
+            cout << "Ã‘Ã°Ã¥Ã¤Ã­Ã¥Ã¥ Ã Ã°Ã¨Ã´Ã¬Ã¥Ã²Ã¨Ã·Ã¥Ã±ÃªÃ®Ã¥: " << average << endl;
         }
     }
     return 0;
